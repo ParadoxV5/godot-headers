@@ -157,6 +157,13 @@ typedef struct godot_gdnative_ext_net_api_struct {
 	void (*godot_net_bind_multiplayer_peer)(godot_object *p_obj, const godot_net_multiplayer_peer *p_interface);
 } godot_gdnative_ext_net_api_struct;
 
+typedef struct godot_gdnative_core_1_4_api_struct {
+	unsigned int type;
+	godot_gdnative_api_version version;
+	const godot_gdnative_api_struct *next;
+	godot_real (*godot_transform2d_determinant)(const godot_transform2d *p_self);
+} godot_gdnative_core_1_4_api_struct;
+
 typedef struct godot_gdnative_core_1_3_api_struct {
 	unsigned int type;
 	godot_gdnative_api_version version;
